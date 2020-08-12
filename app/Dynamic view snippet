@@ -1,0 +1,47 @@
+private void transitionToProductPage(final int pID) {
+
+        final LinearLayout linearLayout;
+        setContentView(R.layout.single_product_page);
+        linearLayout = findViewById(R.id.singleProductPage);
+        final ImageView productImage = new ImageView(this);
+        final TextView productName = new TextView(this);
+        final TextView productDesc = new TextView(this);
+        final TextView productCost = new TextView(this);
+
+        linearLayout.addView(productImage);
+
+        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("dproduct_images");
+
+        storageReference.child(pID + ".jpg").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Glide.with(ShopPageActivity.this).load(uri.toString()).into(productImage);
+
+            }
+        });
+
+        DatabaseReference myRef = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference product = myRef.child("dProducts");
+        product.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String pName = dataSnapshot.child(pID + "").child("name").getValue(String.class);
+                String pDesc = dataSnapshot.child(pID + "").child("description").getValue(String.class);
+                int pCost = dataSnapshot.child(pID + "").child("cost").getValue(Integer.class);
+                productName.setText(pName);
+                productDesc.setText(pDesc);
+                productCost.setText("₹" + pCost);
+                linearLayout.addView(productName);
+                linearLayout.addView(productDesc);
+                linearLayout.addView(productCost);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+
+    }

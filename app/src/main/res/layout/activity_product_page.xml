@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/singleProductPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/sellerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Seller Info"
+            android:padding="4dp"
+            android:textColor="#FFFFFF"
+            android:background="#2196F3"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/SingleProductImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/SingleProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/SingleProductCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₹500"
+        android:textColor="#008000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/SingleProductDesc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:text="Product Description"
+        android:textColor="#383838"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/SingleProductInStockLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stock:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/SingleProductStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="5 "
+            android:textColor="#383838" />
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/SingleProductBuyNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#2196F3"
+        android:text="Add to Cart"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

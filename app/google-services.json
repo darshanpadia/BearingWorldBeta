@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "611989713659",
+    "firebase_url": "https://bearing-world-d74ee.firebaseio.com",
+    "project_id": "bearing-world-d74ee",
+    "storage_bucket": "bearing-world-d74ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611989713659:android:e0a5f4ac924d3508f1b65e",
+        "android_client_info": {
+          "package_name": "com.example.bearingworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611989713659-h700h3d7rfk8gkjtiju4o6b6qe6h6p02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bearingworld",
+            "certificate_hash": "28373b7116d7faf5c34293f4eff8d32eda7775cf"
+          }
+        },
+        {
+          "client_id": "611989713659-ooomch92rm795g19ubq56eebpmap2brc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh2ggWqtY0dhPZkcpOyGr6A-F9q6IWA3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611989713659-ooomch92rm795g19ubq56eebpmap2brc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
