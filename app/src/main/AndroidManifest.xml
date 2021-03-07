@@ -28,29 +28,21 @@
         <activity android:name=".SellerShopPageActivity" />
         <activity android:name=".SellerEditProductActivity" />
         <activity android:name=".MyOrdersSellerActivity" />
-        <activity
-            android:name=".ShopPage"
-            android:label="@string/title_activity_shop_page"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".PlaceOrderActivity" />
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".ConfirmOrderActivity" />
         <activity android:name=".MyOrdersUser" />
         <activity android:name=".ProductPageActivity" />
-        <activity android:name=".DynamicShopPage2" />
         <activity android:name=".DynamicShopPage" />
         <activity android:name=".SellerContactActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".AccountDeactivationActivity" />
-        <activity android:name=".ShopPageActivity" />
         <activity android:name=".RealEditProfileActivity" />
         <activity android:name=".AddNewProduct" />
         <activity android:name=".SellerDashboard" />
         <activity android:name=".SellerLoginActivity" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".SignUpActivity1" />
         <activity android:name=".EditProfileActivity" />
-        <activity android:name=".UploadProfilePic" />
         <activity android:name=".UserProfile" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MainActivity">
